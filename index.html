@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>숫자 맞추기 게임!</h1>
-    <div id="result-area">결과가 나온다</div>
-    <div id="chance-area">남은 찬스:</div>
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <h1 class="pre-title">당신은 천재입니까?</h1>
+    <h1 class="title">천재 판별 게임!</h1>
+    <h1 class="sub-title"><span class="red-text">5번</span> 만에 맞추면 천재</h1>
+    <div id="result-area">  <img src="https://i.pinimg.com/originals/43/bc/e1/43bce1c605c4503a35de10abd78e4513.gif" class="main-img">
+        <h1 class="result-text">천재는 아무나 못 한다</h1>
+    </div>
+    <h2 id="chance-area"></h2>
     <input type="number" id="user-input"/>
-    <button id="play-button">Go!</button>
-    <button id="reset-button">리셋!</button>
+    <button class="btn btn-success mb-2 button-style" id="play-button">도전!</button>
+    <button class="btn btn-warning mt-3 button-style button-reset" id="reset-button">리셋</button>
     <script src="main.js"></script>
-  </body>
+</body>
 </html>
